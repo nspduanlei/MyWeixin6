@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:background="@drawable/tab_bg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <com.duanlei.myweixin6.ChangeColorIconWithText
+            android:id="@+id/id_indicator_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:my_icon="@drawable/ic_menu_start_conversation"
+            app:my_color="#ff45c01a"
+            app:text="@string/app_name"
+            app:text_size="12sp"/>
+
+        <com.duanlei.myweixin6.ChangeColorIconWithText
+            android:id="@+id/id_indicator_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:my_icon="@drawable/ic_menu_friendslist"
+            app:my_color="#ff45c01a"
+            app:text="@string/tab_contact"
+            app:text_size="12sp"/>
+
+        <com.duanlei.myweixin6.ChangeColorIconWithText
+            android:id="@+id/id_indicator_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:my_icon="@drawable/ic_menu_emoticons"
+            app:my_color="#ff45c01a"
+            app:text="@string/tab_found"
+            app:text_size="12sp"/>
+
+        <com.duanlei.myweixin6.ChangeColorIconWithText
+            android:id="@+id/id_indicator_four"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:my_icon="@drawable/ic_menu_allfriends"
+            app:my_color="#ff45c01a"
+            app:text="@string/tab_me"
+            app:text_size="12sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
